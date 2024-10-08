@@ -44,6 +44,11 @@ const Index = () => {
           service="speaker"
         />
       </div>
+      <div className="z-10 text-center mt-8 text-white">
+        <p>Kontakta oss:</p>
+        <p>Email: <a href="mailto:bokning@eyoo.se" className="underline">bokning@eyoo.se</a></p>
+        <p>Tel: <a href="tel:+46700131356" className="underline">+46 70-013 13 56</a></p>
+      </div>
     </div>
   );
 };
