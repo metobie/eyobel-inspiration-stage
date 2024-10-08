@@ -7,7 +7,7 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
     background-image: url('https://i.imgur.com/rQ0a84N.png');
     background-size: cover;
     background-position: center;
