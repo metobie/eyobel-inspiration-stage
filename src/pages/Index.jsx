@@ -13,6 +13,19 @@ const Index = () => {
       }
     };
 
+    // Initiera spotlight-effekten i mitten av skärmen
+    const initSpotlight = () => {
+      if (spotlightRef.current) {
+        const centerX = window.innerWidth / 2;
+        const centerY = window.innerHeight / 2;
+        spotlightRef.current.style.setProperty('--x', `${centerX}px`);
+        spotlightRef.current.style.setProperty('--y', `${centerY}px`);
+      }
+    };
+
+    // Kör initSpotlight när komponenten monteras
+    initSpotlight();
+
     window.addEventListener('mousemove', handleMouseMove);
 
     return () => {
