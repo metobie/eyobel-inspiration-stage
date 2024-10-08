@@ -26,7 +26,7 @@ const Index = () => {
       <div className="spotlight" ref={spotlightRef}></div>
       <div className="z-10 text-center mb-8">
         <h1 className="text-5xl font-bold text-white mb-4 animate-pulse">Eyobel Samson</h1>
-        <p className="text-xl text-white">DJ | Föreläsare | Inspiratör</p>
+        <p className="text-xl text-white">DJ | Inspirationsföreläsare</p>
       </div>
       <div className="flex flex-wrap justify-center z-10">
         <ContentBox
@@ -36,10 +36,10 @@ const Index = () => {
           alt="Eyobel som DJ"
         />
         <ContentBox
-          title="Föreläsare Eyobel"
-          description="Inspireras av Eyobels resa och lär dig hur du kan förverkliga dina drömmar och nå dina mål."
+          title="Inspirationsföreläsare Eyobel"
+          description="Låt Eyobel inspirera dig med sin erfarenhet om hur man tacklar sina drömmar och når sina mål."
           image="https://i.imgur.com/yrd67Vv.png"
-          alt="Eyobel som föreläsare"
+          alt="Eyobel som inspirationsföreläsare"
         />
       </div>
     </div>
