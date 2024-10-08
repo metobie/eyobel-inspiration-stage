@@ -13,6 +13,14 @@ const Index = () => {
       }
     };
 
+    // Set initial spotlight position to center of the screen
+    if (spotlightRef.current) {
+      const centerX = window.innerWidth / 2;
+      const centerY = window.innerHeight / 2;
+      spotlightRef.current.style.setProperty('--x', `${centerX}px`);
+      spotlightRef.current.style.setProperty('--y', `${centerY}px`);
+    }
+
     window.addEventListener('mousemove', handleMouseMove);
 
     return () => {
