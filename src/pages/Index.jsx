@@ -6,30 +6,39 @@ const Index = () => {
 
   useEffect(() => {
     const handleMouseMove = (e) => {
-      if (spotlightRef.current) {
-        const { clientX, clientY } = e;
-        spotlightRef.current.style.setProperty('--x', `${clientX}px`);
-        spotlightRef.current.style.setProperty('--y', `${clientY}px`);
+      updateSpotlight(e.clientX, e.clientY);
+    };
+
+    const handleTouchMove = (e) => {
+      if (e.touches.length > 0) {
+        const touch = e.touches[0];
+        updateSpotlight(touch.clientX, touch.clientY);
       }
     };
 
-    // Initiera spotlight-effekten i mitten av skärmen
+    const updateSpotlight = (x, y) => {
+      if (spotlightRef.current) {
+        spotlightRef.current.style.setProperty('--x', `${x}px`);
+        spotlightRef.current.style.setProperty('--y', `${y}px`);
+      }
+    };
+
+    // Initialize spotlight effect at the center of the screen
     const initSpotlight = () => {
-      if (spotlightRef.current) {
-        const centerX = window.innerWidth / 2;
-        const centerY = window.innerHeight / 2;
-        spotlightRef.current.style.setProperty('--x', `${centerX}px`);
-        spotlightRef.current.style.setProperty('--y', `${centerY}px`);
-      }
+      const centerX = window.innerWidth / 2;
+      const centerY = window.innerHeight / 2;
+      updateSpotlight(centerX, centerY);
     };
 
-    // Kör initSpotlight när komponenten monteras
+    // Run initSpotlight when the component mounts
     initSpotlight();
 
     window.addEventListener('mousemove', handleMouseMove);
+    window.addEventListener('touchmove', handleTouchMove);
 
     return () => {
       window.removeEventListener('mousemove', handleMouseMove);
+      window.removeEventListener('touchmove', handleTouchMove);
     };
   }, []);
 
