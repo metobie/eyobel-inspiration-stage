@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 
 const ContentBox = ({ title, description, image, alt, service }) => {
   const getEmailContent = (service) => {
@@ -25,18 +26,24 @@ const ContentBox = ({ title, description, image, alt, service }) => {
   const mobileTitle = title === "INSPIRATIONSFÖRELÄSNINGAR" ? "INSPIRATIONS-\nFÖRELÄSNINGAR" : title;
 
   return (
-    <div className="content-box text-white flex flex-col items-center md:w-auto w-[calc(100%+2rem)] -mx-4 md:mx-0">
-      <h2 className="text-2xl font-bold mb-4 text-center md:hidden whitespace-pre-line">{mobileTitle}</h2>
-      <h2 className="text-2xl font-bold mb-4 text-center hidden md:block">{title}</h2>
-      <img src={image} alt={alt} className="w-full h-48 object-cover mb-4 rounded" />
-      <p className="mb-4 text-center">{description}</p>
-      <Button 
-        onClick={handleBooking}
-        className="bg-white text-black hover:bg-gray-200"
-      >
-        Boka nu
-      </Button>
-    </div>
+    <Card className="w-full max-w-sm bg-white/10 backdrop-blur-md text-white">
+      <CardHeader>
+        <CardTitle className="text-2xl font-bold mb-4 text-center md:block hidden">{title}</CardTitle>
+        <CardTitle className="text-2xl font-bold mb-4 text-center md:hidden whitespace-pre-line">{mobileTitle}</CardTitle>
+      </CardHeader>
+      <CardContent className="flex flex-col items-center">
+        <img src={image} alt={alt} className="w-full h-48 object-cover mb-4 rounded" />
+        <p className="mb-4 text-center">{description}</p>
+      </CardContent>
+      <CardFooter className="flex justify-center">
+        <Button 
+          onClick={handleBooking}
+          className="bg-white text-black hover:bg-gray-200"
+        >
+          Boka nu
+        </Button>
+      </CardFooter>
+    </Card>
   );
 };
 

@@ -29,14 +29,14 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden">
+    <div className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden p-4">
       <div className="gradient-overlay absolute inset-0 z-0"></div>
       <div className="spotlight" ref={spotlightRef}></div>
       <div className="z-10 text-center mb-8">
         <img src="https://imgur.com/0LHKV77.png" alt="DJ EYOO Logo" className="mx-auto w-80 h-auto mb-4" />
         <p className="text-xl text-white">DJ | Inspirationsföreläsare</p>
       </div>
-      <div className="flex flex-wrap justify-center gap-8 z-10 w-full md:w-auto">
+      <div className="flex flex-col md:flex-row justify-center gap-8 z-10 w-full max-w-4xl">
         <ContentBox
           title="DJ EYOO"
           description="Låt Eyobel skapa den perfekta stämningen för ditt event med sin unika musikstil och energi."
