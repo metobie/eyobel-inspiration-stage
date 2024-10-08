@@ -29,9 +29,11 @@
   transition: all 0.3s ease;
 }
 
-.content-box:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+@media (min-width: 768px) {
+  .content-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  }
 }
 
 .spotlight {

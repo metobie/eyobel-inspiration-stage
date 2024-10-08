@@ -22,9 +22,12 @@ const ContentBox = ({ title, description, image, alt, service }) => {
     window.location.href = mailtoLink;
   };
 
+  const mobileTitle = title === "INSPIRATIONSFÖRELÄSNINGAR" ? "INSPIRATIONS-\nFÖRELÄSNINGAR" : title;
+
   return (
-    <div className="content-box text-white flex flex-col items-center">
-      <h2 className="text-2xl font-bold mb-4 text-center">{title}</h2>
+    <div className="content-box text-white flex flex-col items-center md:w-auto w-[calc(100%+2rem)] -mx-4 md:mx-0">
+      <h2 className="text-2xl font-bold mb-4 text-center md:hidden whitespace-pre-line">{mobileTitle}</h2>
+      <h2 className="text-2xl font-bold mb-4 text-center hidden md:block">{title}</h2>
       <img src={image} alt={alt} className="w-full h-48 object-cover mb-4 rounded" />
       <p className="mb-4 text-center">{description}</p>
       <Button 
