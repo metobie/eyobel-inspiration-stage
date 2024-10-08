@@ -30,7 +30,7 @@ const Index = () => {
       </div>
       <div className="flex flex-wrap justify-center z-10">
         <ContentBox
-          title="DJ Eyobel"
+          title="DJ Eyoo"
           description="Låt Eyobel skapa den perfekta stämningen för ditt event med sin unika musikstil och energi."
           image="https://i.imgur.com/a1EA8ZY.jpeg"
           alt="Eyobel som DJ"
