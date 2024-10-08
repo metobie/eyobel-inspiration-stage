@@ -22,25 +22,9 @@ const ContentBox = ({ title, description, image, alt, service }) => {
     window.location.href = mailtoLink;
   };
 
-  const formatTitle = (title) => {
-    if (title === "INSPIRATIONSFÖRELÄSNINGAR") {
-      return (
-        <h2 className="text-2xl font-bold mb-4 text-center">
-          <span className="sm:hidden">
-            INSPIRATIONS-<br />FÖRELÄSNINGAR
-          </span>
-          <span className="hidden sm:inline">
-            INSPIRATIONSFÖRELÄSNINGAR
-          </span>
-        </h2>
-      );
-    }
-    return <h2 className="text-2xl font-bold mb-4 text-center">{title}</h2>;
-  };
-
   return (
-    <div className="content-box text-white flex flex-col items-center w-full sm:w-80 max-w-sm mx-auto sm:mx-4 my-4">
-      {formatTitle(title)}
+    <div className="content-box text-white flex flex-col items-center">
+      <h2 className="text-2xl font-bold mb-4 text-center">{title}</h2>
       <img src={image} alt={alt} className="w-full h-48 object-cover mb-4 rounded" />
       <p className="mb-4 text-center">{description}</p>
       <Button 

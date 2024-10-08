@@ -21,14 +21,14 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden px-4 py-8">
+    <div className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden">
       <div className="gradient-overlay absolute inset-0 z-0"></div>
       <div className="spotlight" ref={spotlightRef}></div>
       <div className="z-10 text-center mb-8">
-        <img src="https://imgur.com/0LHKV77.png" alt="DJ EYOO Logo" className="mx-auto w-64 sm:w-80 h-auto mb-4" />
+        <img src="https://imgur.com/0LHKV77.png" alt="DJ EYOO Logo" className="mx-auto w-80 h-auto mb-4" />
         <p className="text-xl text-white">DJ | Inspirationsföreläsare</p>
       </div>
-      <div className="flex flex-col sm:flex-row justify-center items-stretch z-10 w-full max-w-4xl">
+      <div className="flex flex-wrap justify-center z-10">
         <ContentBox
           title="DJ EYOO"
           description="Låt Eyobel skapa den perfekta stämningen för ditt event med sin unika musikstil och energi."
@@ -45,6 +45,7 @@ const Index = () => {
         />
       </div>
       <div className="z-10 text-center mt-8 text-white">
+        <p>Kontakta oss:</p>
         <p>Email: <a href="mailto:bokning@eyoo.se" className="underline">bokning@eyoo.se</a></p>
         <p>Tel: <a href="tel:+46700131356" className="underline">+46 70-013 13 56</a></p>
       </div>
