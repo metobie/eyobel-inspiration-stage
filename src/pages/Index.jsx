@@ -37,7 +37,7 @@ const Index = () => {
           service="dj"
         />
         <ContentBox
-          title="Inspirationsföreläsningar"
+          title="INSPIRATIONSFÖRELÄSNINGAR"
           description="Låt Eyobel inspirera dig med sin erfarenhet om hur man tacklar sina drömmar och når sina mål."
           image="https://i.imgur.com/yrd67Vv.png"
           alt="Eyobel som inspirationsföreläsare"
