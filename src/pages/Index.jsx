@@ -25,7 +25,7 @@ const Index = () => {
       <div className="gradient-overlay absolute inset-0 z-0"></div>
       <div className="spotlight" ref={spotlightRef}></div>
       <div className="z-10 text-center mb-8">
-        <h1 className="text-5xl font-bold text-white mb-4 animate-pulse uppercase">EYOBEL SAMSON</h1>
+        <img src="https://i.imgur.com/NA4j13D.png" alt="Eyobel Samson Logo" className="mx-auto w-64 h-auto mb-4" />
         <p className="text-xl text-white">DJ | Inspirationsföreläsare</p>
       </div>
       <div className="flex flex-wrap justify-center z-10">
