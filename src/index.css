@@ -67,6 +67,18 @@
   }
 }
 
+@media (min-width: 1024px) {
+  .content-box {
+    max-width: 450px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .content-box {
+    max-width: 500px;
+  }
+}
+
 @media (max-width: 768px) {
   .content-box {
     max-width: 100%;

@@ -54,7 +54,7 @@ const Index = () => {
         <img src="https://imgur.com/0LHKV77.png" alt="DJ EYOO Logo" className="mx-auto w-80 h-auto mb-4" />
         <p className="text-xl text-white">DJ & Inspirationsföreläsare</p>
       </div>
-      <div className={`flex flex-wrap justify-center gap-8 z-10 w-full md:w-auto transition-all duration-1000 delay-300 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+      <div className={`flex flex-wrap justify-center gap-8 z-10 w-full max-w-7xl mx-auto px-4 transition-all duration-1000 delay-300 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
         <ContentBox
           title="DJ EYOO"
           description="Låt Eyobel skapa den perfekta stämningen för ditt event med sin unika musikstil och energi."
