@@ -23,8 +23,10 @@
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 10px;
   padding: 2rem;
-  margin: 1rem;
+  margin: 1rem auto;
   transition: all 0.3s ease;
+  max-width: 400px;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -56,4 +58,18 @@
 .fade-in-up.show {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .content-box {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-box {
+    max-width: 100%;
+    margin: 1rem 0;
+  }
 }

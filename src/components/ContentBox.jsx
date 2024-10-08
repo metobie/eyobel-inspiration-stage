@@ -25,10 +25,12 @@ const ContentBox = ({ title, description, image, alt, service }) => {
   const mobileTitle = title === "INSPIRATIONSFÖRELÄSNINGAR" ? "INSPIRATIONS-\nFÖRELÄSNINGAR" : title;
 
   return (
-    <div className="content-box text-white flex flex-col items-center md:w-auto w-[calc(100%+2rem)] -mx-4 md:mx-0 backdrop-blur-sm bg-opacity-10 bg-white">
+    <div className="content-box text-white flex flex-col items-center w-full max-w-sm mx-auto md:mx-4 backdrop-blur-sm bg-opacity-10 bg-white">
       <h2 className="text-2xl font-bold mb-4 text-center md:hidden whitespace-pre-line">{mobileTitle}</h2>
       <h2 className="text-2xl font-bold mb-4 text-center hidden md:block">{title}</h2>
-      <img src={image} alt={alt} className="w-full h-48 object-cover mb-4 rounded" />
+      <div className="w-full h-48 mb-4 rounded overflow-hidden">
+        <img src={image} alt={alt} className="w-full h-full object-cover" />
+      </div>
       <p className="mb-4 text-center">{description}</p>
       <Button 
         onClick={handleBooking}
