@@ -48,7 +48,7 @@ const Index = () => {
         <p>Email: <a href="mailto:bokning@eyoo.se" className="underline">bokning@eyoo.se</a></p>
         <p>Tel: <a href="tel:+46700131356" className="underline">+46 70-013 13 56</a></p>
       </div>
-      <div className="z-10 text-center mt-4 text-white text-sm">
+      <div className="z-10 text-center mt-4 text-white text-sm opacity-60 hover:opacity-100 transition-opacity">
         <p>
           Designed by <a href="https://renew-io.se" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-300 transition-colors">Renew I/O</a>
         </p>
