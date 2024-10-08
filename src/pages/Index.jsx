@@ -52,7 +52,7 @@ const Index = () => {
       <div className="spotlight" ref={spotlightRef}></div>
       <div className={`z-10 text-center mb-8 transition-all duration-1000 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
         <img src="https://imgur.com/0LHKV77.png" alt="DJ EYOO Logo" className="mx-auto w-80 h-auto mb-4" />
-        <p className="text-xl text-white">DJ | Inspirationsföreläsare</p>
+        <p className="text-xl text-white">DJ & Inspirationsföreläsare</p>
       </div>
       <div className={`flex flex-wrap justify-center gap-8 z-10 w-full md:w-auto transition-all duration-1000 delay-300 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
         <ContentBox
