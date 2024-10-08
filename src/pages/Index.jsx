@@ -28,7 +28,7 @@ const Index = () => {
         <img src="https://imgur.com/0LHKV77.png" alt="DJ EYOO Logo" className="mx-auto w-64 sm:w-80 h-auto mb-4" />
         <p className="text-xl text-white">DJ | Inspirationsföreläsare</p>
       </div>
-      <div className="flex flex-col sm:flex-row justify-center items-center z-10 w-full max-w-4xl">
+      <div className="flex flex-col sm:flex-row justify-center items-stretch z-10 w-full max-w-4xl">
         <ContentBox
           title="DJ EYOO"
           description="Låt Eyobel skapa den perfekta stämningen för ditt event med sin unika musikstil och energi."

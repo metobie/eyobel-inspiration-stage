@@ -39,7 +39,7 @@ const ContentBox = ({ title, description, image, alt, service }) => {
   };
 
   return (
-    <div className="content-box text-white flex flex-col items-center w-full sm:w-auto max-w-sm mx-auto sm:mx-2 my-4">
+    <div className="content-box text-white flex flex-col items-center w-full sm:w-80 max-w-sm mx-auto sm:mx-4 my-4">
       {formatTitle(title)}
       <img src={image} alt={alt} className="w-full h-48 object-cover mb-4 rounded" />
       <p className="mb-4 text-center">{description}</p>
