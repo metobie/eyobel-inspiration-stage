@@ -34,12 +34,14 @@ const Index = () => {
           description="Låt Eyobel skapa den perfekta stämningen för ditt event med sin unika musikstil och energi."
           image="https://i.imgur.com/a1EA8ZY.jpeg"
           alt="Eyobel som DJ"
+          service="dj"
         />
         <ContentBox
           title="Inspirationsföreläsningar"
           description="Låt Eyobel inspirera dig med sin erfarenhet om hur man tacklar sina drömmar och når sina mål."
           image="https://i.imgur.com/yrd67Vv.png"
           alt="Eyobel som inspirationsföreläsare"
+          service="speaker"
         />
       </div>
     </div>
